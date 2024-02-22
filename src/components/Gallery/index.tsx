@@ -11,8 +11,8 @@ const Gallery: FC<GalleryProps> = async () => {
 	const { data } = initial;
 
 	return (
-		<div className="h-full pt-5 flex flex-col items-center justify-center gap-10">
-			<div className="font-semibold text-center text-4xl">
+		<div className="h-full flex flex-col items-center justify-center gap-5">
+			<div className="font-semibold text-center text-3xl">
 				<h1>Memories that</h1>
 				<h1>we made</h1>
 			</div>
