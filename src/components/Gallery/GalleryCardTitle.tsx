@@ -8,7 +8,9 @@ const GalleryCardTitle: FC<GalleryCardTitleProps> = ({
 	description,
 }: GalleryCardTitleProps) => {
 	return (
-		<p className="text-sm border-l-4 border-primary pl-2">{description}</p>
+		<p className="lg:text-sm md:text-sm text-[10px] font-light border-l-4 border-primary pl-2">
+			{description}
+		</p>
 	);
 };
 
