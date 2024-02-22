@@ -94,7 +94,7 @@ const Content: FC<ContentProps> = () => {
 
 			<div
 				ref={section3}
-				className="max-w-6xl w-11/12 mx-auto  flex flex-col items-center"
+				className="max-w-6xl w-11/12 mx-auto h-screen flex flex-col items-center"
 			>
 				<div className="flex flex-col items-center justify-center">
 					<TiArrowSortedUp
