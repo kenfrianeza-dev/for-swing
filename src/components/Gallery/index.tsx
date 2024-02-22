@@ -9,7 +9,6 @@ interface GalleryProps {}
 const Gallery: FC<GalleryProps> = async () => {
 	const initial = await loadQuery<SanityDocument[]>(POSTS_QUERY);
 	const { data } = initial;
-	console.log(data);
 
 	return (
 		<div className="h-full pt-5 flex flex-col items-center justify-center gap-10">
