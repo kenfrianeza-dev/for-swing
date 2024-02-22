@@ -6,7 +6,7 @@ import GalleryCardTitle from "./GalleryCardTitle";
 
 const GalleryCard = async (props: SanityDocument) => {
 	return (
-		<div className="flex flex-col gap-3 cursor-pointer border border-dashed rounded-md bg-primary/10 border-primary p-4 hover:shadow-lg hover:scale-105 duration-200">
+		<div className="flex flex-col gap-2 p-2 cursor-pointer border border-dashed rounded-md bg-primary/10 border-primary hover:shadow-lg hover:scale-105 duration-200">
 			<PictureTakenDate pictureTakenAt={props.pictureTakenAt} />
 			<Image
 				className="aspect-square object-cover rounded-md"
