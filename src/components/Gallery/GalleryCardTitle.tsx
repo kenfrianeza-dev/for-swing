@@ -1,15 +1,15 @@
 import { FC } from "react";
 
 interface GalleryCardTitleProps {
-	description: string;
+	title: string;
 }
 
 const GalleryCardTitle: FC<GalleryCardTitleProps> = ({
-	description,
+	title,
 }: GalleryCardTitleProps) => {
 	return (
-		<p className="lg:text-sm md:text-sm text-[10px] font-light border-l-4 border-primary pl-2">
-			{description}
+		<p className="bg-primary/10 py-2 rounded-md lg:text-sm md:text-sm text-[10px] border-l-4 border-primary pl-3">
+			{title}
 		</p>
 	);
 };

@@ -13,7 +13,7 @@ const getYearFromDate = (dateString: string) => {
 };
 
 function formatDateYYYYMMDD(date: string) {
-	return format(date, "MMMM dd, yyyy");
+	return format(date, "MMM dd, yyyy");
 }
 
 export { handleSmoothScroll, getYearFromDate, formatDateYYYYMMDD };

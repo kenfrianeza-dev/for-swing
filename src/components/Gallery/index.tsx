@@ -7,8 +7,8 @@ import GalleryCard from "./GalleryCard";
 interface GalleryProps {}
 
 const Gallery: FC<GalleryProps> = async () => {
-	const initial = await loadQuery<SanityDocument[]>(POSTS_QUERY);
-	const { data } = initial;
+	const posts = await loadQuery<SanityDocument[]>(POSTS_QUERY);
+	const { data } = posts;
 
 	return (
 		<div className="h-full flex flex-col items-center justify-center gap-5">
@@ -17,7 +17,7 @@ const Gallery: FC<GalleryProps> = async () => {
 				<h1>we made</h1>
 			</div>
 
-			<section className="max-w-6xl w-11/12 grid gap-2 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 ">
+			<section className="max-w-6xl w-11/12 grid gap-4 lg:grid-cols-4 md:grid-cols-3 grid-cols-2 ">
 				{data.map((item) => {
 					return <GalleryCard key={item._id} {...item} />;
 				})}
