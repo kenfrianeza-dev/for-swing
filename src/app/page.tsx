@@ -1,6 +1,4 @@
-import Content from "@/components/Content";
-import Footer from "@/components/Footer";
-import Gallery from "@/components/Gallery/index";
+import { Content, Footer, Gallery } from "@/components";
 
 export default async function HomePage() {
 	return (

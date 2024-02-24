@@ -2,7 +2,7 @@ import { SanityDocument } from "next-sanity";
 import { loadQuery } from "../../../sanity/lib/store";
 import { POSTS_QUERY } from "../../../sanity/lib/queries";
 import { FC } from "react";
-import GalleryCard from "./GalleryCard";
+import { GalleryCard } from "@/components";
 
 interface GalleryProps {}
 

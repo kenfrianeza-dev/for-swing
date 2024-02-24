@@ -1,9 +1,11 @@
 import { SanityDocument } from "next-sanity";
 import { client } from "../../../sanity/lib/client";
-import GalleryCardDate from "./GalleryCardDate";
-import GalleryCardTitle from "./GalleryCardTitle";
-import GalleryImage from "./GalleryImage";
-import GalleryProfileImage from "./GalleryProfileImage";
+import {
+	GalleryCardDate,
+	GalleryProfileImage,
+	GalleryImage,
+	GalleryCardTitle,
+} from "@/components";
 
 const GalleryCard = async (props: SanityDocument) => {
 	const authorData = await client.fetch(`*[_id == $authorId][0]`, {
@@ -21,7 +23,6 @@ const GalleryCard = async (props: SanityDocument) => {
 			</div>
 			<GalleryImage {...props} />
 			<GalleryCardTitle title={props.title} />
-			{/* <GalleryCardTitle description={props.body[0].children[0].text} /> */}
 		</div>
 	);
 };
